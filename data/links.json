@@ -1,0 +1,38 @@
+[
+  {
+    "id": "chain",
+    "url": "https://github.com/b-b0t/chain",
+    "title": "Text-Only Link",
+    "description": "Multi-disciplinary software engineer and designer. Get in touch for services, collaboration or consulting.",
+    "cover": "/static/covers/link.jpg",
+    "type": "text",
+    "icon": false
+  },
+  {
+    "id": "chain",
+    "url": "https://github.com/b-b0t/chain",
+    "title": "Feature",
+    "description": "This is the feature link style. It is used when you want a prominent call to action and a description.",
+    "cover": "/static/covers/link.jpg",
+    "type": "feature",
+    "icon": true
+  },
+  {
+    "id": "chain",
+    "url": "https://github.com/b-b0t/chain",
+    "title": "Visual Link",
+    "description": "Multi-disciplinary software engineer and designer. Get in touch for services, collaboration or consulting.",
+    "cover": "/static/covers/link.jpg",
+    "type": "visual",
+    "icon": true
+  },
+  {
+    "id": "chain",
+    "url": "https://github.com/b-b0t/chain",
+    "title": "Visual Link without Icon",
+    "description": "Multi-disciplinary software engineer and designer. Get in touch for services, collaboration or consulting.",
+    "cover": "/static/covers/link.jpg",
+    "type": "visual",
+    "icon": false
+  }
+]
