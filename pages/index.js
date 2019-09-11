@@ -15,7 +15,7 @@ export default () => {
   return (
     <Layout>
       <Head>
-        <title>CHAIN | Link Page for Bios</title>
+        <title>Chain | Link in Bio</title>
         <meta name="description" content="Serverless link in bio page based on amp-next." />
         <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico?v=2" />
       </Head>
@@ -26,7 +26,7 @@ export default () => {
       </div>
       <style jsx>{`
       .content {
-        max-width: 700px;
+        max-width: 730px;
         margin: 0 auto;
       }
         h1 {

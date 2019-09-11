@@ -8,7 +8,7 @@ export default () => (
       {links.map(link => (
         <a className={link.type} href={link.url} key={link.title}>
             <div className="image">
-              {link.icon ? <Link width="24px" height="24px" /> : ''}
+              {link.icon ? <Link width="24px" height="24px" fill="#fff" /> : ''}
               <amp-img width={1200} height={630} alt={link.title} layout="intrinsic" src={link.cover || Placeholder } />
             </div>
             <div className="info">

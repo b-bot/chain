@@ -4,4 +4,7 @@ export { default as Twitter } from './Icon-Twitter';
 export { default as Instagram } from './Icon-Instagram';
 export { default as GitHub } from './Icon-GitHub';
 export { default as LinkedIn } from './Icon-LinkedIn';
+export { default as SoundCloud } from './Icon-SoundCloud';
+export { default as YouTube } from './Icon-YouTube';
+export { default as Vimeo } from './Icon-Vimeo';
 export { default as BP } from './BP';

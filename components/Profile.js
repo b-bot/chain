@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, GitHub, LinkedIn } from './icons/index';
+import { Facebook, Twitter, Instagram, GitHub, LinkedIn, SoundCloud, YouTube, Vimeo } from './icons/index';
 import profile from '../data/profile.json';
 
 export default () => (
@@ -11,8 +11,11 @@ export default () => (
       {profile.facebook ? <Facebook width="24px" height="24px" fill="#fff" padding="0 10px" url={ "https://facebook.com/" + profile.facebook} /> : ''}     
       {profile.twitter ? <Twitter width="24px" height="24px" fill="#fff" padding="0 10px" url={ "https://twitter.com/" + profile.twitter} /> : ''}   
       {profile.instagram ? <Instagram width="24px" height="24px" fill="#fff" padding="0 10px" url={ "https://instagram.com/" + profile.instagram} /> : ''}   
-      {profile.github ? <GitHub width="24px" height="24px" fill="#fff" padding="0 10px" url={ "https://github.com/" + profile.github} /> : ''}   
+      {profile.github ? <GitHub width="24px" height="24px" fill="#fff" padding="0 10px" url={ "https://github.com/" + profile.github} /> : ''}
       {profile.linkedin ? <LinkedIn width="24px" height="24px" fill="#fff" padding="0 10px" url={ "https://linkedin.com/in/" + profile.linkedin} /> : ''}
+      {profile.soundcloud ? <SoundCloud width="24px" height="24px" fill="#fff" padding="0 10px" url={ "https://soundcloud.com/" + profile.soundcloud} /> : ''}
+      {profile.youtube ? <YouTube width="24px" height="24px" fill="#fff" padding="0 10px" url={ "https://youtube.com/channel/" + profile.youtube} /> : ''}
+      {profile.vimeo ? <Vimeo width="24px" height="24px" fill="#fff" padding="0 10px" url={ "https://vimeo.com/" + profile.vimeo} /> : ''}  
     </div>
     <style jsx>
       {`
