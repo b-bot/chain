@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Twitter = props => (
-<a style={{padding: props.padding, margin: props.margin}} href={props.url}>
+<a style={{padding: props.padding, margin: props.margin}} href={props.url} aria-label="Twitter">
   <svg height={props.height} width={props.width} viewBox="0 0 31 24" xmlns="http://www.w3.org/2000/svg">
     <g>
       <path d="M30.229 2.844c-1.088.481-2.25.806-3.475.956A6.073 6.073 0 0 0 29.416.45a12.024 12.024 0 0 1-3.843 1.469A6.044 6.044 0 0 0 21.154 0a6.052 6.052 0 0 0-6.05 6.056c0 .475.05.938.156 1.382A17.148 17.148 0 0 1 2.785 1.106a6.068 6.068 0 0 0 1.881 8.088c-1-.025-1.937-.3-2.75-.757v.076a6.056 6.056 0 0 0 4.856 5.937 6.105 6.105 0 0 1-1.593.212c-.388 0-.769-.037-1.138-.112a6.062 6.062 0 0 0 5.657 4.206 12.135 12.135 0 0 1-8.963 2.507A16.918 16.918 0 0 0 9.997 24c11.144 0 17.232-9.231 17.232-17.238 0-.262-.007-.525-.019-.781a12.321 12.321 0 0 0 3.019-3.137" fill={props.fill}/>

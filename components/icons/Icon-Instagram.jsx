@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Instagram = props => (
-  <a style={{ padding: props.padding, margin: props.margin }} href={props.url}>
+  <a style={{ padding: props.padding, margin: props.margin }} href={props.url} aria-label="Instagram">
     <svg height={props.height} width={props.width} viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
       <g>
         <g fill={props.fill}>
