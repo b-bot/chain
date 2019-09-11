@@ -4,8 +4,9 @@ import profile from '../data/profile.json';
 
 export default () => (
   <div className="profile">
-    <amp-img width="100px" height="100px" className="avatar" src="/static/avatar.jpg" />
+    <amp-img alt="Avatar" width="100px" height="100px" className="avatar" src="/static/avatar.jpg" />
     <h2>{profile.name}</h2>
+    <p>{profile.caption}</p>
     <div className="social">
       {profile.facebook ? <Facebook width="24px" height="24px" fill="#fff" padding="0 10px" url={ "https://facebook.com/" + profile.facebook} /> : ''}     
       {profile.twitter ? <Twitter width="24px" height="24px" fill="#fff" padding="0 10px" url={ "https://twitter.com/" + profile.twitter} /> : ''}   

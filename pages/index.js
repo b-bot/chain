@@ -16,6 +16,7 @@ export default () => {
     <Layout>
       <Head>
         <title>CHAIN | Link Page for Bios</title>
+        <meta name="description" content="Serverless link in bio page based on amp-next." />
         <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico?v=2" />
       </Head>
       <div className="content">
