@@ -15,7 +15,7 @@ export default () => (
         padding: 20px;
         border-radius: 10px;
         overflow: hidden;
-        margin: 40px 20px;
+        margin: 20px;
         border: 1px solid #a9a9a9;
       }
       .logo {
