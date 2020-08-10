@@ -1,6 +1,6 @@
 # Chain - Link in Bio page based on `next-amp`
 
-![CHAIN](https://github.com/b-b0t/chain/raw/master/static/avatar.jpg "CHAIN")
+![CHAIN](https://github.com/b-b0t/chain/raw/master/public/avatar.jpg "CHAIN")
 
 ## How to use
 
@@ -9,7 +9,7 @@
 
 ### Deploying to Now
 
-``` bash
+```bash
 git clone
 now
 ```

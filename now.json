@@ -1,8 +1,4 @@
 {
   "version": 2,
-  "alias": "chain.byronpolley.com",
-  "name": "chain",
-  "builds": [
-    { "src": "package.json", "use": "@now/next" }
-  ]
+  "alias": "chain.byronpolley.com"
 }
