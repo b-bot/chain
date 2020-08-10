@@ -1,4 +1,6 @@
-export default function Layout ({ children }) {
+import React from "react";
+
+const Layout = ({ children }) => {
   return (
     <>
       {children}
@@ -11,5 +13,7 @@ export default function Layout ({ children }) {
         }
       `}</style>
     </>
-  )
-}
+  );
+};
+
+export default Layout;
