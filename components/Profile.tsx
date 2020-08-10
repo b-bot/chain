@@ -18,7 +18,7 @@ const Profile = () => (
       width="100px"
       height="100px"
       className="avatar"
-      src="/static/avatar.jpg"
+      src="/avatar.jpg"
     />
     <h2>{profile.name}</h2>
     <p>{profile.caption}</p>

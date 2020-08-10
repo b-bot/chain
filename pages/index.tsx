@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useAmp } from "next/amp";
 import Layout from "../components/Layout";
+import Meta from "../components/Meta";
 import Links from "../components/Links";
 import Profile from "../components/Profile";
 import Footer from "../components/Footer";
@@ -14,18 +15,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <Head>
-        <title>Chain | Link in Bio</title>
-        <meta
-          name="description"
-          content="Serverless link in bio page based on amp-next."
-        />
-        <link
-          rel="shortcut icon"
-          type="image/x-icon"
-          href="/static/favicon.ico?v=2"
-        />
-      </Head>
+      <Meta />
       <div className="content">
         <Profile />
         <Links />
