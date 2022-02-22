@@ -12,7 +12,7 @@ export const parameters = {
       appContentBg: "#232323",
       brandTitle: "Chain",
       brandUrl: "https://www.npmjs.com/package/chain",
-      brandImage: "https://chain.byronpolley.com/favicon.png",
+      brandImage: "https://chain.byronpolley.com/storybook.png",
     },
     // Override the default light theme
     light: {
@@ -21,7 +21,7 @@ export const parameters = {
       appContentBg: "#e8e8e8",
       brandTitle: "Chain",
       brandUrl: "https://www.npmjs.com/package/chain",
-      brandImage: "https://chain.byronpolley.com/favicon.png",
+      brandImage: "https://chain.byronpolley.com/storybook.png",
     },
     classTarget: "html",
     darkClass: "dark",
