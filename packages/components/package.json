@@ -1,13 +1,19 @@
 {
   "name": "chain",
-  "repository": "git://github.com/b-bot/chain.git",
+  "description": "A React web3 toolkit for building accessible and performant applications.",
   "version": "0.2.0",
+  "bugs": "https://github.com/b-bot/chain/issues",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b-bot/chain.git",
+    "directory": "packages/components"
+  },
   "scripts": {
     "prettier": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "ds:build": "rollup -c",
-    "ds:release": "yarn ds:build && np"
+    "build": "rollup -c",
+    "publish": "yarn build && np"
   },
   "peerDependencies": {
     "react": "17.0.1",
