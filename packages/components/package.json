@@ -9,6 +9,12 @@
     "url": "https://github.com/b-bot/chain.git",
     "directory": "packages/components"
   },
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "scripts": {
     "prettier": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 0",
