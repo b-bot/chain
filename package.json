@@ -20,5 +20,12 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
+  "preinstall": "npx npm-force-resolutions",
+  "resolutions": {
+    "glob-parent": "^5.1.2",
+    "ansi-regex": "^5.0.1",
+    "trim": "^0.0.3",
+    "prismjs": "^1.27.0"
+  },
   "packageManager": "yarn@1.22.10"
 }
