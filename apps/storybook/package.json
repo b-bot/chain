@@ -5,20 +5,20 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.17.5",
-    "@storybook/addon-a11y": "^6.4.19",
-    "@storybook/addon-actions": "^6.4.19",
-    "@storybook/addon-essentials": "^6.4.19",
-    "@storybook/addon-links": "^6.4.19",
-    "@storybook/addon-storysource": "^6.4.19",
-    "@storybook/addons": "^6.4.19",
-    "@storybook/react": "^6.4.19",
-    "@storybook/theming": "^6.4.19",
+    "@storybook/addon-a11y": "^6.5.8",
+    "@storybook/addon-actions": "^6.5.8",
+    "@storybook/addon-essentials": "^6.5.8",
+    "@storybook/addon-links": "^6.5.8",
+    "@storybook/builder-webpack5": "^6.5.8",
+    "@storybook/manager-webpack5": "^6.5.8",
+    "@storybook/react": "^6.5.8",
+    "@storybook/theming": "^6.5.8",
     "babel-loader": "^8.2.3",
     "serve": "^13.0.2",
-    "storybook-dark-mode": "^1.0.9"
+    "storybook-dark-mode": "^1.1.0"
   },
   "scripts": {
-    "dev": "start-storybook -p 6006 --no-manager-cache -s ./.storybook/images",
+    "dev": "start-storybook -p 6006",
     "build": "build-storybook",
     "serve": "serve storybook-static"
   }

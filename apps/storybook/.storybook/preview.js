@@ -1,7 +1,19 @@
 import React from "react";
 import { themes } from "@storybook/theming";
-import { darkTheme } from "../../../packages/components";
+import { createTheme } from "@nextui-org/react";
 import { ThemeProvider } from "next-themes";
+import { useDarkMode } from "storybook-dark-mode";
+import { ChainProvider } from "../../../packages/ui/src/ChainProvider";
+
+const lightTheme = createTheme({
+  type: "light",
+  className: "light",
+});
+
+const darkTheme = createTheme({
+  type: "dark",
+  className: "dark",
+});
 
 export const parameters = {
   darkMode: {
@@ -44,12 +56,14 @@ export const decorators = [
   (Story) => (
     <ThemeProvider
       attribute="class"
-      value={{ light: "light", dark: darkTheme }}
+      value={{ light: "light" }}
       enableSystem={false}
       enableColorScheme={false}
       disableTransitionOnChange
     >
-      <Story />
+      <ChainProvider theme={useDarkMode() ? darkTheme : lightTheme}>
+        <Story />
+      </ChainProvider>
     </ThemeProvider>
   ),
 ];
