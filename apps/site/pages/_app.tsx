@@ -1,5 +1,17 @@
-import { globalCss } from "@nextui-org/react";
+import type { AppProps } from "next/app";
+import { globalCss, createTheme } from "@nextui-org/react";
+import { ThemeProvider, useTheme } from "next-themes";
 import { ChainProvider } from "../../../packages/ui/src/ChainProvider";
+
+const lightTheme = createTheme({
+  type: "light",
+  className: "light",
+});
+
+const darkTheme = createTheme({
+  type: "dark",
+  className: "dark",
+});
 
 const globalStyles = globalCss({
   html: {
@@ -34,10 +46,11 @@ const globalStyles = globalCss({
   },
 });
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
+  const { theme, setTheme } = useTheme();
   globalStyles();
   return (
-    <ChainProvider>
+    <ChainProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Component {...pageProps} />
     </ChainProvider>
   );
