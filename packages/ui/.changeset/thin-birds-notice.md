@@ -1,0 +1,5 @@
+---
+'chain': minor
+---
+
+Changeset test
