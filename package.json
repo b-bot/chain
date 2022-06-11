@@ -14,7 +14,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=site^storybook^... && changeset publish"
+    "release": "turbo run build --filter=chain && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.23.0",
