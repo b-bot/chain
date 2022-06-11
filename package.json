@@ -14,16 +14,12 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=site^... && changeset publish"
+    "release": "turbo run build --filter=site^storybook^... && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.23.0",
     "prettier": "^2.6.2",
     "turbo": "^1.2.16"
-  },
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
   },
   "packageManager": "yarn@1.22.10",
   "dependencies": {
