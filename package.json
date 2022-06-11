@@ -11,10 +11,10 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "release": "turbo run build --filter=site^... && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.23.0",
@@ -24,13 +24,6 @@
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
-  },
-  "preinstall": "npx npm-force-resolutions",
-  "resolutions": {
-    "glob-parent": "^5.1.2",
-    "ansi-regex": "^5.0.1",
-    "trim": "^0.0.3",
-    "prismjs": "^1.27.0"
   },
   "packageManager": "yarn@1.22.10",
   "dependencies": {
