@@ -1,13 +1,8 @@
 import React from 'react';
-import { NextUIProvider, createTheme } from '@nextui-org/react';
-import { ThemeProvider, useTheme } from 'next-themes';
+import { NextUIProvider } from '@nextui-org/react';
+import { ThemeProvider } from 'next-themes';
 import '@rainbow-me/rainbowkit/styles.css';
-import {
-  getDefaultWallets,
-  RainbowKitProvider,
-  lightTheme as rainbowLightTheme,
-  darkTheme as rainbowDarkTheme,
-} from '@rainbow-me/rainbowkit';
+import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { chain, configureChains, createClient, WagmiConfig } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
@@ -28,40 +23,25 @@ export const wagmiClient = createClient({
   provider,
 });
 
-const lightTheme = createTheme({
-  type: 'light',
-});
-
-const darkTheme = createTheme({
-  type: 'dark',
-});
-
 export interface ChainProps {
   children: React.ReactNode;
-  theme?: any;
+  appTheme?: any;
+  walletTheme?: any;
 }
 
-const lightWallet = rainbowLightTheme();
-const darkWallet = rainbowDarkTheme();
-
 export function ChainProvider(props: ChainProps) {
-  const { children, theme } = props;
+  const { children, appTheme, walletTheme } = props;
   return (
     <ThemeProvider
-      enableColorScheme
       disableTransitionOnChange
       defaultTheme="system"
-      value={{
-        light: lightTheme.className,
-        dark: darkTheme.className,
-      }}
+      enableColorScheme
+      attribute="class"
+      value={appTheme}
     >
-      <NextUIProvider theme={theme}>
+      <NextUIProvider>
         <WagmiConfig client={wagmiClient}>
-          <RainbowKitProvider
-            theme={theme.className === 'light' ? lightWallet : darkWallet}
-            chains={chains}
-          >
+          <RainbowKitProvider theme={walletTheme} chains={chains}>
             {children}
           </RainbowKitProvider>
         </WagmiConfig>

@@ -1,6 +1,9 @@
 import type { AppProps } from "next/app";
 import { globalCss, createTheme } from "@nextui-org/react";
-import { ThemeProvider, useTheme } from "next-themes";
+import {
+  lightTheme as rainbowLightTheme,
+  darkTheme as rainbowDarkTheme,
+} from "@rainbow-me/rainbowkit";
 import { ChainProvider } from "../../../packages/ui/src/ChainProvider";
 
 const lightTheme = createTheme({
@@ -46,11 +49,19 @@ const globalStyles = globalCss({
   },
 });
 
+const lightWallet = rainbowLightTheme();
+const darkWallet = rainbowDarkTheme();
+
 function MyApp({ Component, pageProps }: AppProps) {
-  const { theme, setTheme } = useTheme();
   globalStyles();
   return (
-    <ChainProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ChainProvider
+      appTheme={{
+        light: lightTheme.className,
+        dark: darkTheme.className,
+      }}
+      walletTheme={{ lightMode: lightWallet, darkMode: darkWallet }}
+    >
       <Component {...pageProps} />
     </ChainProvider>
   );

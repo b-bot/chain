@@ -1,7 +1,10 @@
 import React from "react";
 import { themes } from "@storybook/theming";
 import { createTheme } from "@nextui-org/react";
-import { ThemeProvider } from "next-themes";
+import {
+  lightTheme as rainbowLightTheme,
+  darkTheme as rainbowDarkTheme,
+} from "@rainbow-me/rainbowkit";
 import { useDarkMode } from "storybook-dark-mode";
 import { ChainProvider } from "../../../packages/ui/src/ChainProvider";
 
@@ -14,6 +17,9 @@ const darkTheme = createTheme({
   type: "dark",
   className: "dark",
 });
+
+const lightWallet = rainbowLightTheme();
+const darkWallet = rainbowDarkTheme();
 
 export const parameters = {
   darkMode: {
@@ -54,16 +60,14 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider
-      attribute="class"
-      value={{ light: "light" }}
-      enableSystem={false}
-      enableColorScheme={false}
-      disableTransitionOnChange
+    <ChainProvider
+      appTheme={{
+        light: lightTheme.className,
+        dark: darkTheme.className,
+      }}
+      walletTheme={useDarkMode() ? darkWallet : lightWallet}
     >
-      <ChainProvider theme={useDarkMode() ? darkTheme : lightTheme}>
-        <Story />
-      </ChainProvider>
-    </ThemeProvider>
+      <Story />
+    </ChainProvider>
   ),
 ];
