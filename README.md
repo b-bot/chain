@@ -1,23 +1,31 @@
 <a href="https://www.npmjs.com/package/chain" >
-  <img alt="Radix UI hero image" src="https://raw.githubusercontent.com/b-bot/chain/main/chain.jpg">
+  <img alt="Chain Hero Image" src="https://raw.githubusercontent.com/b-bot/chain/main/chain.jpg">
 </a>
 
 # Chain
 
-**A React web3 toolkit for building accessible and performant applications.**
+**The fastest way to add web3 functionality to your Next.js application.**
 
-🔶 This is a work in progress therefore the API may change. Please bare with us during this period. 🔶
+🔶 Work In Progress 🔶
 
 ---
 
 ## Getting Started
 
-``` bash
+```bash
 npm install chain
+```
 
 OR
 
+```bash
 yarn add chain
+```
+
+OR
+
+```bash
+pnpm add chain
 ```
 
 ## Documentation

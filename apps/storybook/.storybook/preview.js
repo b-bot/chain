@@ -47,7 +47,7 @@ export const parameters = {
     stylePreview: true,
   },
   docs: {
-    theme: themes.normal,
+    theme: themes.dark,
   },
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {

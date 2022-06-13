@@ -1,5 +1,5 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
-export const Button = () => {
+export const Connect = () => {
   return <ConnectButton />;
 };
