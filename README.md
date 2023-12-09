@@ -4,6 +4,8 @@
 
 # Chain
 
+[![Version](https://img.shields.io/npm/v/chain.svg?colorB=green)](https://www.npmjs.com/package/chain) [![npm bundle size](https://img.shields.io/bundlephobia/minzip/chain)](https://www.npmjs.com/package/chain)
+
 **The fastest way to add web3 functionality to your Next.js application.**
 
 🔶 Work In Progress 🔶
@@ -35,6 +37,7 @@ Coming soon.
 ## Releases
 
 Please see versions on [NPM](https://www.npmjs.com/package/chain).
+[![Version](https://img.shields.io/npm/v/chain.svg?colorB=green)](https://www.npmjs.com/package/chain)
 
 ## Contributing
 
