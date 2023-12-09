@@ -4,7 +4,7 @@ import {
   lightTheme as rainbowLightTheme,
   darkTheme as rainbowDarkTheme,
 } from "@rainbow-me/rainbowkit";
-import { ChainProvider } from "../../../packages/ui/src/ChainProvider";
+import { ChainProvider } from "../../../packages/chain/src/ChainProvider";
 
 const lightTheme = createTheme({
   type: "light",

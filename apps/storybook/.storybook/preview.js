@@ -6,7 +6,7 @@ import {
   darkTheme as rainbowDarkTheme,
 } from "@rainbow-me/rainbowkit";
 import { useDarkMode } from "storybook-dark-mode";
-import { ChainProvider } from "../../../packages/ui/src/ChainProvider";
+import { ChainProvider } from "../../../packages/chain/src/ChainProvider";
 
 const lightTheme = createTheme({
   type: "light",
