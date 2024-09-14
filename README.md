@@ -6,25 +6,11 @@
 
 # Chain
 
-**The fastest way to add web3 functionality to your Next.js application.**
-
 🔶 Work In Progress 🔶
 
 ---
 
 ## Getting Started
-
-```bash
-npm install chain
-```
-
-OR
-
-```bash
-yarn add chain
-```
-
-OR
 
 ```bash
 pnpm add chain
@@ -50,6 +36,6 @@ Please follow our [contributing guidelines](./.github/CONTRIBUTING.md).
 
 ## License
 
-Licensed under the MIT License, Copyright © 2022-present [b-bot](https://byronpolley.com).
+Licensed under the MIT License, Copyright © 2024-present [b-bot](https://byronpolley.com).
 
 See [LICENSE](./LICENSE) for more information.
