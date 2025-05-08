@@ -1,6 +1,6 @@
 {
   "name": "chain",
-  "private": true,
+  "version": "0.4.2",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
