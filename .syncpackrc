@@ -1,0 +1,67 @@
+{
+  "sortFirst": [
+    "name",
+    "description",
+    "version",
+    "license",
+    "author",
+    "private",
+    "type",
+    "exports",
+    "engines",
+    "scripts",
+    "dependencies",
+    "devDependencies",
+    "peerDependencies"
+  ],
+  "customTypes": {
+    "engines": {
+      "path": "engines",
+      "strategy": "versionsByName"
+    }
+  },
+  "semverGroups": [
+    {
+      "label": "Use range version numbers in peers and engines",
+      "packages": [
+        "**"
+      ],
+      "dependencyTypes": [
+        "peer",
+        "engines"
+      ],
+      "dependencies": [
+        "**"
+      ],
+      "range": ">="
+    }
+  ],
+  "versionGroups": [
+    {
+      "label": "Ban lodash and ramda in this toolkit starter",
+      "dependencies": [
+        "lodash",
+        "ramda"
+      ],
+      "isBanned": true
+    },
+    {
+      "label": "Use workspace protocol for local packages",
+      "dependencies": [
+        "$LOCAL"
+      ],
+      "dependencyTypes": [
+        "dev",
+        "prod",
+        "peer"
+      ],
+      "pinVersion": "workspace:*"
+    }
+  ],
+  "source": [
+    "package.json",
+    "apps/docs/package.json",
+    "packages/typescript-config/package.json",
+    "packages/ui/package.json"
+  ]
+}

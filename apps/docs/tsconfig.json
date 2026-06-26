@@ -1,6 +1,11 @@
 {
   "extends": "@repo/typescript-config/nextjs.json",
   "compilerOptions": {
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
+    "paths": {
+      "content-collections": ["./.content-collections/generated"]
+    },
     "plugins": [
       {
         "name": "next"
@@ -10,9 +15,11 @@
   "include": [
     "next-env.d.ts",
     "next.config.mjs",
+    "content-collections.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    ".content-collections/generated"
   ],
   "exclude": ["node_modules"]
 }

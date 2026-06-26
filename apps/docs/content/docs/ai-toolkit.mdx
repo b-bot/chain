@@ -1,0 +1,19 @@
+---
+title: AI Toolkit Direction
+description: Notes on the intended Chain product shape.
+---
+
+# AI Toolkit Direction
+
+Chain should stay intentionally lean while the toolkit takes shape. Add reusable capability code under `packages/*` and keep the docs app as the public/internal knowledge surface.
+
+## Near-term priorities
+
+1. Define the toolkit primitives.
+2. Add package boundaries before adding product surfaces.
+3. Keep dependency versions centralized through the PNPM catalog.
+4. Use Syncpack and Turborepo checks before commits.
+
+## Repo rule of thumb
+
+If code is useful outside the docs app, put it in a package. If it explains or demonstrates toolkit usage, put it in docs.

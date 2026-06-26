@@ -1,19 +1,31 @@
 {
   "name": "chain",
   "version": "0.4.2",
+  "private": true,
+  "engines": {
+    "node": ">=22.19.0"
+  },
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "build": "turbo run build",
+    "dev": "turbo run dev --filter=docs",
+    "format": "prettier --write \"**/*.{ts,tsx,md,mdx,json,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,md,mdx,json,yml,yaml}\"",
+    "lint": "turbo run lint",
+    "postinstall": "syncpack lint",
+    "syncpack:fix": "syncpack fix",
+    "syncpack:format": "syncpack format",
+    "syncpack:format:check": "syncpack format --check",
+    "syncpack:lint": "syncpack lint",
+    "syncpack:list": "syncpack list",
+    "syncpack:update": "syncpack update",
+    "typecheck": "turbo run typecheck",
+    "update": "syncpack fix && syncpack format && syncpack lint && pnpm install"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
-    "turbo": "^2.1.2",
-    "typescript": "^5.4.5"
+    "prettier": "catalog:",
+    "syncpack": "15.3.2",
+    "turbo": "2.10.0",
+    "typescript": "catalog:"
   },
-  "packageManager": "pnpm@8.15.6",
-  "engines": {
-    "node": ">=18"
-  }
+  "packageManager": "pnpm@11.9.0"
 }
